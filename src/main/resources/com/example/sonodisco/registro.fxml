@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="383.0"
+      prefWidth="350.0" style="-fx-background-color: #31081f;" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sonodisco.RegistroController">
+    <HBox prefHeight="100.0" prefWidth="200.0">
+        <Label prefHeight="44.0" prefWidth="125.0" text="Nome " textFill="WHITE">
+            <font>
+                <Font name="Comic Sans MS" size="20.0"/>
+            </font>
+            <HBox.margin>
+                <Insets bottom="20.0" left="15.0" top="20.0"/>
+            </HBox.margin>
+        </Label>
+        <TextArea fx:id="inputNome" prefHeight="34.0" prefWidth="200.0">
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <HBox.margin>
+                <Insets bottom="20.0" top="20.0"/>
+            </HBox.margin>
+        </TextArea>
+    </HBox>
+    <HBox prefHeight="100.0" prefWidth="200.0">
+        <Label prefHeight="40.0" prefWidth="125.0" text="Autoria" textFill="WHITE">
+            <font>
+                <Font name="Comic Sans MS" size="20.0"/>
+            </font>
+            <HBox.margin>
+                <Insets bottom="20.0" left="15.0" top="20.0"/>
+            </HBox.margin>
+        </Label>
+        <TextArea fx:id="inputAutoria" prefHeight="200.0" prefWidth="200.0">
+            <HBox.margin>
+                <Insets bottom="20.0" top="20.0"/>
+            </HBox.margin>
+        </TextArea>
+    </HBox>
+    <HBox prefHeight="100.0" prefWidth="200.0">
+        <Label prefHeight="66.0" prefWidth="125.0" text="Gênero" textFill="WHITE">
+            <font>
+                <Font name="Comic Sans MS" size="20.0"/>
+            </font>
+            <HBox.margin>
+                <Insets bottom="20.0" left="15.0" top="20.0"/>
+            </HBox.margin>
+        </Label>
+        <TextArea fx:id="inputGenero" prefHeight="200.0" prefWidth="200.0">
+            <HBox.margin>
+                <Insets bottom="20.0" top="20.0"/>
+            </HBox.margin>
+        </TextArea>
+    </HBox>
+    <HBox prefHeight="100.0" prefWidth="200.0">
+        <Label prefHeight="105.0" prefWidth="125.0" text="lançamento" textFill="WHITE">
+            <font>
+                <Font name="Comic Sans MS" size="20.0"/>
+            </font>
+            <HBox.margin>
+                <Insets bottom="20.0" left="15.0" top="20.0"/>
+            </HBox.margin>
+        </Label>
+        <TextArea fx:id="inputLancamento" prefHeight="34.0" prefWidth="200.0">
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <HBox.margin>
+                <Insets bottom="20.0" top="20.0"/>
+            </HBox.margin>
+        </TextArea>
+    </HBox>
+    <HBox prefHeight="100.0" prefWidth="350.0">
+        <Button fx:id="btnRegistrar" mnemonicParsing="false" onAction="#registrar" prefHeight="45.0" prefWidth="200.0"
+                style="-fx-background-color: white;" text="Registrar">
+            <font>
+                <Font name="Comic Sans MS" size="21.0"/>
+            </font>
+            <HBox.margin>
+                <Insets left="25.0" right="25.0"/>
+            </HBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button fx:id="btnVoltar" mnemonicParsing="false" onAction="#voltar" prefHeight="45.0" prefWidth="170.0"
+                style="-fx-background-color: white;" text="Voltar">
+            <font>
+                <Font name="Comic Sans MS" size="20.0"/>
+            </font>
+            <HBox.margin>
+                <Insets left="25.0" right="50.0"/>
+            </HBox.margin>
+        </Button>
+    </HBox>
+</VBox>

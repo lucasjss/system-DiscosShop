@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.sonodisco.HomeController">
+    <children>
+        <ImageView fitHeight="358.0" fitWidth="612.0" layoutX="-12.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../img/home.jpg"/>
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#31081f" height="360.0" layoutX="-2.0" layoutY="-6.0"
+                   stroke="BLACK" strokeType="INSIDE" width="10.0"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#31081f" height="360.0" layoutX="595.0" layoutY="-6.0"
+                   stroke="BLACK" strokeType="INSIDE" width="10.0"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#31081f" height="10.0" layoutX="-6.0" stroke="BLACK"
+                   strokeType="INSIDE" width="612.0"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#31081f" height="10.0" layoutX="-6.0" layoutY="345.0"
+                   stroke="BLACK" strokeType="INSIDE" width="612.0"/>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#31081f" height="84.0" layoutX="167.0" layoutY="125.0"
+                   stroke="BLACK" strokeType="INSIDE" width="254.0"/>
+        <Text fx:id="teste1" fill="#fdfffc" layoutX="172.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Bem vindo!">
+            <font>
+                <Font name="Comic Sans MS" size="50.0"/>
+            </font>
+        </Text>
+        <Button fx:id="btnAcervo" layoutX="196.0" layoutY="228.0" mnemonicParsing="false" onAction="#acessarAcervo"
+                prefHeight="52.0" prefWidth="197.0" style="-fx-background-color: #B392AC;" text="Acessar acervo"
+                textFill="#fdfffc">
+            <font>
+                <Font size="25.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+    </children>
+</AnchorPane>
